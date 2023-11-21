@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  outline: nome;
+}
+
+body {
+  background: url("./imagem/fundo.jpg");
+}
+
+.Container {
+  background-color: rgb(135, 179, 135);
+  width: 500px;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 100px auto 0;
+}
+
+img {
+  width: 25px;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+.list:hover img {
+  opacity: 1;
+}
+.input-task {
+  border: nome;
+  border-radius: 5px;
+  width: 300px;
+  height: 45px;
+  padding-left: 15px;
+}
+
+.button-task {
+  border: nome;
+  border-radius: 5px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  font-size: 17px;
+  padding: 0 10px;
+  float: right;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.button-task:hover {
+  opacity: 0.7;
+}
+
+.button-task:active {
+  opacity: 0.6;
+}
+
+.list-task {
+  width: 100%;
+  list-style: none;
+  margin-top: 35px;
+}
+.list {
+  background-color: #f2f2f2;
+  box-shadow: 1px 4px 10px rgb(0, 0, 0.2);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.done {
+  background-color: aquamarine;
+  text-decoration: line-through;
+}
